@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Add Product</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Manage Products</a></li>
+                <li><a href="#">Manage Orders</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Add New Product</h1>
+            </header>
+
+            <section class="add-product-form">
+                <form action="#" method="POST" id="engine_form">
+                    <div class="form-group">
+                        <label for="product-name">Product Name:</label>
+                        <input type="text" id="product-name" name="product-name" placeholder="Enter product name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-price">Price ($):</label>
+                        <input type="number" id="product-price" name="product-price" step="0.01" placeholder="Enter price" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-description">Description:</label>
+                        <textarea id="product-description" name="product-description" placeholder="Enter product description" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-category">Category:</label>
+                        <select id="product-category" name="product-category">
+              <option value="electronics">Electronics</option>
+              <option value="clothing">Clothing</option>
+              <option value="accessories">Accessories</option>
+              <option value="home-appliances">Home Appliances</option>
+            </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-image">Upload Image:</label>
+                        <input type="file" id="product-image" name="product-image">
+                    </div>
+
+
+                    <button class="submit-btn">Add Product</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>
